@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content= "IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>Personal Portfolio Website </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="annoymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="sc2.png" class="logo">
+        <ul>
+          <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">PORTFOLIO</a></li>
+        <li><a href="#">SERVICES</a></li>
+        <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+    <div class="header-text">
+       <p>JAVA DEVELOPER</p>
+<h1>Hi, Im <span>Shannell </span><br> Clarke From New Jersey </h1>
+    </div>
+    </div>
+  </div>
+  <!--------------------about------------------->
+  <div id="about">
+    <div class ="container">
+      <div class="row">
+        <div class="about-col-1">
+            <img src="JD.avif" alt="">
+      </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me </h1>
+          <p>Im a Front-End Developer & Java Developer               in the East Coast Region. Im bringing a 8             years background of healthcare with precison              of project manager to any team.Coding has               become apart of my life and I love to see the results of my efforts helping users experience. While finding unique resolutions to complex problems. </p>
+ </div class= "tab titles">
+<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+<p class="tab-links"onclick="opentab('experience')">Experience</p>
+<p class="tab-links"onclick="opentab('education')">Education</p>
+  </div>
+      <div class="tab-contents active-tab" id="skills">
+        <ul>
+          <li><span>Java Developer</span><br>Object-Oriented Programming               Concepts</li>
+          <li><span>Front-End Developer</span><br>Web App Development </li>
+          <li><span>Project Manager</span><br>Project planning</li>
+        </ul>
+         <div class="tab-contents" id="experience">
+        <ul>
+          <li><span> 2022 </span><br>Java Development at Techbridge       
+          Technology Training Program </li>
+          <li><span>2022 </span><br> Front End Developer at Zuri Training 
+          Program </li>
+          <li><span>2022</span><br> Progect Manager at Google/GABI Training
+         Program</li>
+        </ul>
+            <div class="tab-contents" id="education">
+        <ul>
+          <li><span>2012</span><br>EOCHS</li>
+          <li><span>2022</span><br>Micro-credential Technology Program 
+          TechBridge </li>
+          <li><span>2022</span><br> Project Manager GABI </li>
+        </ul>
+            </div>
+         </div>
+      </div>
+      </div>
+    </div>
+  <!-------------services---------------->
+  <div id="services">
+    <div =class"container">
+   <h1 class="sub-title">My Services </h1>
+      <div class="service-List">
+        <div>
+          <i class="fas fa-code"></i>
+          <h2>  Java Developer</h2>
+          <p>>developing solutions that are result-oriented, feature-rich in high- 
+           performance, reliable and  a blend of innovation and design thinking.</p>
+          <a href="#">Learn more </a>
+      </div>
+        <div>
+          <i class="fas fa-crop-alt"></i>
+          <h2> Front-End Developer</h2>
+          <p>> creating efficient and sustainable applications with frontend architecture             a set of tools and processes to improve the quality of frontend code</p>
+          <a href="#">Learn more </a>
+        </div>
+        <div>
+          <i class="fa-solid fa-business-time"></i>
+          <h2>  Project Manager </h2>
+          <p>>planning, organizing, and directing the completion of specific projects for an 
+        organization while ensuring these projects are on time, on budget, and within scope</p>
+          <a href="#">Learn more </a>
+        </div>
+         <div>
+    </div>
+      
+  < !--------- portfolio------------------->
+  <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="java1.jpg"
+              <div class="layer">
+                <h3>Social Media App</h3>
+                <p></p>
+            </div>
+             <div class="work">
+            <img src="FE2.png"
+          </div>
+           <div class="work">
+            <img src="PM1.webp"
+           </div>
+          <!-------------------- contact------------------->
+          <div id="contact">
+       <div class="container">
+    <div class="row">
+     <div class="contact-left">
+      <h1 class="sub-title">Contact Me</h1>
+      <p>beaunelle@aol.com</p>
+  <div class="social-icons">
+  <a href="https://www.linkedin.com/in/shannellc/"><i class="fa-                    brands fa-linkedin"></i></a>
+  <a href="https://github.com/sclarke28"><i class="fa-brands fa-github"></i></a>
+    </div> 
+      <div class="contact-right"> 
+    <form>
+      <input type="text" name="Name" placeholder="Your Name" required>
+      <input type="text" name="Name" placeholder="Your Email" required>
+      <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+      <button type="submit">Submitt</button>
+    </form>
+  </div>
+  </div>
+   </div>
+  </div>
+        
+  <script>
+  
+    var tablinks = documents.getElementsByClassName("tab-links");
+    var tabcontents = documents.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+        
+      }
+       for(tabcontent of tabcontents){
+        tabcontents.classList.remove("active-tab");
+    
+       }
+      event.currentTarget.classList.add("active-link");
+              document.getElementById(tabname).classList.add(active-tab);
+      }
+  </script>
+      
+      </body>
+
+</html>
